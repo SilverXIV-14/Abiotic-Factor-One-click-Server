@@ -218,4 +218,4 @@ Get-Content $report
 - [服务器快速开始](https://github.com/DFJacob/AbioticFactorDedicatedServer/wiki/Guide-%E2%80%90-Quickstart)
 - [存档迁移](https://github.com/DFJacob/AbioticFactorDedicatedServer/wiki/Guide-%E2%80%90-Migrating-Saves)
 
-这是独立社区工具，与 Deep Field Games 无隶属关系，不包含官方游戏资源。原始包未附带开源许可证；源码公开不等于授予任意再分发或商业使用许可，具体授权由权利人确定。
+该项目为游戏辅助工具，与 Deep Field Games 无隶属关系，不包含官方游戏资源。该项目完全由ChatGPT编写，允许重构并自定义修改，不得用于商业途径，该项目创建人持有最终解释权。
