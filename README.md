@@ -9,7 +9,7 @@ GATE Control 是面向《非生物因素》（Abiotic Factor）专用服务器�
 ## 下载与预览
 
 - **[下载 GATE-Control-v1.0.1.zip](https://github.com/SilverXIV-14/Abiotic-Factor-One-click-Server/raw/refs/heads/main/downloads/GATE-Control-v1.0.1.zip)**：原始完整发布包，包含 EXE、源码、说明与测试记录。
-- [单独下载 GateControl.exe](https://github.com/SilverXIV-14/Abiotic-Factor-One-click-Server/raw/refs/heads/main/GateControl.exe)
+- [下载 GateControl.exe](https://github.com/SilverXIV-14/Abiotic-Factor-One-click-Server/raw/refs/heads/main/GateControl.exe)
 - [原始使用说明](使用说明.md) · [1.0.1 修复与升级说明](修复说明-1.0.1.md) · [全部沙盒参数](docs/SANDBOX.md)
 
 ![GATE Control 界面预览](界面预览.png)
@@ -28,14 +28,13 @@ GATE Control 是面向《非生物因素》（Abiotic Factor）专用服务器�
 
 ## 快速开始
 
-1. 下载并解压完整包，运行 `GateControl.exe`。
-2. 在“服务器设置”中自动识别或手动选择专用服务器根目录。程序会检查自身目录、Steam 注册表及游戏库、固定磁盘上的常见 SteamLibrary 目录。
-3. 填写房间名、世界名、人数、密码和端口，点击“保存设置”。默认世界名为 `Cascade`，默认人数为 6。
+1. 下载并解压完整包或只下载`GateControl.exe`。
+2. 在“服务器设置”中自动识别或手动选择专用服务器根目录，程序会检查自身目录、Steam 注册表及游戏库、固定磁盘上的常见 SteamLibrary 目录。
 4. 如需调整玩法，进入“沙盒规则”，先“读取当前世界”，修改后“保存并应用规则”；也可勾选启动时应用规则。
-5. 回到“控制中心”启动，等待显示“世界已加载”。这表示日志确认进入 `/Game/Maps/Facility`，仍需玩家实际加入来验证联网。
+5. 回到“控制中心”启动，等待显示“世界已加载”。
 6. 维护前先在游戏内保存进度，再从工具正常停服。修改沙盒、白名单或处理存档时需处于停服状态。
 
-也可把 EXE 放在专用服务器根目录运行。游戏目录中的原有文件仍须保留。删除或移动开服器不会删除游戏存档和本地偏好。
+**也可把 EXE 放在专用服务器根目录运行。** 游戏目录中的原有文件仍须保留。删除或移动开服器不会删除游戏存档和本地偏好。
 
 ## 六个功能页面
 
@@ -58,7 +57,7 @@ GATE Control 是面向《非生物因素》（Abiotic Factor）专用服务器�
 | 游戏端口 | 7777 | `-PORT`，1–65535 |
 | 查询端口 | 27015 | `-QUERYPORT`，1–65535，不能与游戏端口相同 |
 | 房间 / 管理员密码 | 空 | `-ServerPassword` / `-AdminPassword` |
-| 本地 IPv4 绑定 | 空，使用游戏默认 | `-MultiHome`；只能选择本机地址或 `0.0.0.0` |
+| 本地 IPv4 绑定 | 空，使用游戏默认 | `-MultiHome`；只能选择本机地址或 `0.0.0.0` ； 若使用虚拟网卡建立服务器，则需要填入虚拟网卡地址，如：10.0.0.1|
 | 平台限制 | 不限制 | `-PlatformLimited`：PC、Playstation、Xbox；不代表已完成跨平台验证 |
 | 局域网模式 | 关闭 | `-LANOnly` |
 | 本地 IP 模式 | 关闭 | `-UseLocalIPs`，用于局域网排错，可能影响互联网加入 |
