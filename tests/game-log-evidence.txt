@@ -1,0 +1,6 @@
+[2026.10.21-07.57.44:348][  0]AbioticSandboxOptionSubsystem: Display: Key GameDifficulty sandbox option modified value: 2
+[2026.10.21-07.57.44:348][  0]LogAbiotic: Display: World save: 卡斯卡德_验证_6c12a0d5
+[2026.10.21-07.57.44:349][  0]LogAbiotic: Warning: Dedicated Server could not find any files for the save, this is fine if it's a new save.
+[2026.10.21-07.57.44:870][  1]AbioticSandboxOptionSubsystem: Display: Key GameDifficulty sandbox option modified value: 2
+[2026.10.21-07.57.44:940][  1]LogGlobalStatus: UEngine::LoadMap Load map complete /Game/Maps/Facility
+[2026.10.21-07.57.50:654][173]LogCore: Engine exit requested (reason: ConsoleCtrl RequestExit)

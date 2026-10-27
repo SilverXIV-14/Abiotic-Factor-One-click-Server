@@ -1,0 +1,7 @@
+build/
+work/
+qa-profile/
+*.tmp
+*.bak
+profile.xml
+active.xml
