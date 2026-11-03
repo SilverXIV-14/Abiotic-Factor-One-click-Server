@@ -1,18 +1,26 @@
 # GATE Control · 非生物因素一键开服器
 
-**Abiotic Factor One-click Server · v1.0.1 · Windows 10 / 11 x64 · 中文界面**
+**Abiotic Factor One-click Server · v1.1.0 · Windows 10 / 11 x64 · 中文界面**
 
-GATE Control 是面向《非生物因素》（Abiotic Factor）专用服务器的 Windows 桌面管理工具。通过六个中文页面集中管理启动参数、48 项沙盒规则、服务器进程、维护倒计时、世界存档和管理员白名单，减少手动编辑启动脚本与 INI 文件的操作。
+GATE Control 是面向《非生物因素》（Abiotic Factor）专用服务器的 Windows 桌面管理工具。通过七个中文页面集中管理启动参数、48 项沙盒规则、服务器进程、维护倒计时、世界存档和管理员白名单，减少手动编辑启动脚本与 INI 文件的操作。
 
 本仓库提供可直接运行的程序、完整 C# / WPF 源码、原始发布压缩包及随包测试记录。工具不包含游戏服务器资源，也不会自动安装服务器或配置公网连接。
 
 ## 下载与预览
 
-- **[下载 GATE-Control-v1.0.1.zip](https://github.com/SilverXIV-14/Abiotic-Factor-One-click-Server/raw/refs/heads/main/downloads/GATE-Control-v1.0.1.zip)**：原始完整发布包，包含 EXE、源码、说明与测试记录。
+- **[下载 GATE-Control-v1.1.0.zip](https://github.com/SilverXIV-14/Abiotic-Factor-One-click-Server/raw/refs/heads/main/downloads/GATE-Control-v1.1.0.zip)**：原始完整发布包，包含 EXE、源码、说明与测试记录。
 - [下载 GateControl.exe](https://github.com/SilverXIV-14/Abiotic-Factor-One-click-Server/raw/refs/heads/main/GateControl.exe)
 - [原始使用说明](使用说明.md) · [1.0.1 修复与升级说明](修复说明-1.0.1.md) · [全部沙盒参数](docs/SANDBOX.md)
 
 ![GATE Control 界面预览](界面预览.png)
+
+## 1.1.0 外观更新
+
+新增五套配色、PNG/JPG 背景与可调毛玻璃效果。文字和输入框不参与模糊，页眉与内容面板保留深色遮罩。设置自动保存，可随时恢复默认。
+
+[1.1.0 发布页面](https://github.com/SilverXIV-14/Abiotic-Factor-One-click-Server/releases/tag/v1.1.0) · [外观更新说明](外观更新说明.md)
+
+![外观设置](外观设置预览.png)
 
 ## 运行条件
 
@@ -36,7 +44,7 @@ GATE Control 是面向《非生物因素》（Abiotic Factor）专用服务器�
 
 **也可把 EXE 放在专用服务器根目录运行。** 游戏目录中的原有文件仍须保留。删除或移动开服器不会删除游戏存档和本地偏好。
 
-## 六个功能页面
+## 七个功能页面
 
 | 页面 | 功能与行为 |
 | --- | --- |
@@ -46,6 +54,8 @@ GATE Control 是面向《非生物因素》（Abiotic Factor）专用服务器�
 | 定时任务 | 倒计时停服或重启；重启可循环；显示剩余时间和预计执行时间 |
 | 存档与管理 | 列出世界、备份当前世界、导入单个世界文件夹、编辑 SteamID64 管理员白名单 |
 | 日志与帮助 | 查看服务器日志末尾和工具事件、导出显示内容、打开本地配置目录、访问参数文档、手动强制结束进程 |
+
+| 外观设置 | 五套配色、背景导入、毛玻璃开关和强度、自动保存与恢复默认 |
 
 ## 服务器参数设置详解
 

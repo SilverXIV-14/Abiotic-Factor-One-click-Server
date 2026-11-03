@@ -1,0 +1,98 @@
+﻿PASS: 48 distinct documented sandbox keys
+PASS: valid official default GameDifficulty
+PASS: valid official default HardcoreMode
+PASS: valid official default LootRespawnEnabled
+PASS: valid official default PowerSocketsOffAtNight
+PASS: valid official default DayNightCycleState
+PASS: valid official default DayNightCycleSpeedMultiplier
+PASS: valid official default WeatherFrequency
+PASS: valid official default SinkRefillRate
+PASS: valid official default FoodSpoilSpeedMultiplier
+PASS: valid official default RefrigerationEffectivenessMultiplier
+PASS: valid official default StorageByTag
+PASS: valid official default StructuralSupportLimit
+PASS: valid official default BridgeSupports
+PASS: valid official default HomeWorlds
+PASS: valid official default InvisibleRadiation
+PASS: valid official default TaintedSinkWater
+PASS: valid official default RadiationDealsDamage
+PASS: valid official default EnemySpawnRate
+PASS: valid official default EnemyHealthMultiplier
+PASS: valid official default EnemyPlayerDamageMultiplier
+PASS: valid official default EnemyDeployableDamageMultiplier
+PASS: valid official default DetectionSpeedMultiplier
+PASS: valid official default EnemyAccuracy
+PASS: valid official default ApocalypticAbilities
+PASS: valid official default MaximizeEnemySpawns
+PASS: valid official default DamageToAlliesMultiplier
+PASS: valid official default HungerSpeedMultiplier
+PASS: valid official default ThirstSpeedMultiplier
+PASS: valid official default FatigueSpeedMultiplier
+PASS: valid official default ContinenceSpeedMultiplier
+PASS: valid official default BonusPerkPoints
+PASS: valid official default PlayerXPGainMultiplier
+PASS: valid official default ItemStackSizeMultiplier
+PASS: valid official default ItemWeightMultiplier
+PASS: valid official default ItemDurabilityMultiplier
+PASS: valid official default DurabilityLossOnDeathMultiplier
+PASS: valid official default ShowDeathMessages
+PASS: valid official default AllowRecipeSharing
+PASS: valid official default AllowPagers
+PASS: valid official default AllowTransmog
+PASS: valid official default DisableResearchMinigame
+PASS: valid official default DeathPenalties
+PASS: valid official default FirstTimeStartingWeapon
+PASS: valid official default HostAccessPlayerCorpses
+PASS: valid official default AllowCharacterReset
+PASS: valid official default BaseInventorySize
+PASS: valid official default PlayerFurnitureDestruction
+PASS: valid official default AllowIronMode
+PASS: sandbox minimum enforced
+PASS: sandbox maximum enforced
+PASS: enum validity
+PASS: reject NaN
+PASS: quoted unicode room name
+PASS: documented binding argument
+PASS: no unsupported async/n steam arguments
+PASS: preview masks passwords
+PASS: log password redaction
+PASS: DPAPI roundtrip
+PASS: encrypted persistence
+PASS: profile roundtrip
+PASS: world traversal rejected
+PASS: reserved device rejected
+PASS: trailing dot rejected
+PASS: max players limit
+PASS: duplicate ports rejected
+PASS: nonlocal binding rejected
+PASS: quote injection rejected
+PASS: preserve unknown sections and keys
+PASS: replace duplicate edited keys
+PASS: INI idempotence
+PASS: admin preserve ban list
+PASS: admin duplicate keys supported
+PASS: saving new-world rules never creates world directory
+PASS: sandbox override lives outside SaveGames
+PASS: documented relative SandboxIniPath is generated
+PASS: sandbox identity remains compatible with 1.0
+PASS: explicitly saved rules remain active
+PASS: INI automatic backup
+PASS: INI backup keeps original
+PASS: legacy config-only world is blocked before launch
+PASS: preflight preserves legacy world files
+PASS: ServerEntry is never treated as playable readiness
+PASS: corruption overrides map-loaded text
+PASS: failure remains sticky for the process
+PASS: Facility map completion establishes local readiness
+PASS: first external config preserves unknown world rules
+PASS: external config creation leaves original INI intact
+PASS: sandbox cannot silently follow a different world
+PASS: countdown not early
+PASS: countdown fires once
+PASS: cancel removes schedule
+PASS: invalid repeating shutdown rejected
+PASS: invalid delay rejected
+PASS: migration copies without deleting source
+PASS: copy refuses overwrite
+PASS: valid server directory detection
+TOTAL PASS: 97

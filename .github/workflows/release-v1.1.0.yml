@@ -1,0 +1,32 @@
+name: Publish GATE Control v1.1.0
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/release-v1.1.0.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: release-v1.1.0
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify release files
+        shell: python
+        run: |
+          import hashlib, pathlib, zipfile
+          exe = pathlib.Path('GateControl.exe').read_bytes()
+          expected = pathlib.Path('SHA256.txt').read_text().split()[0].lower()
+          assert hashlib.sha256(exe).hexdigest() == expected, 'EXE checksum mismatch'
+          with zipfile.ZipFile('downloads/GATE-Control-v1.1.0.zip') as package:
+              name = next(n for n in package.namelist() if n.endswith('/GateControl.exe'))
+              assert package.read(name) == exe, 'Packaged EXE differs'
+      - name: Create draft, upload assets, and publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create v1.1.0 GateControl.exe downloads/GATE-Control-v1.1.0.zip SHA256.txt --target "$GITHUB_SHA" --title "GATE Control v1.1.0 · 外观自定义" --notes-file docs/RELEASE-v1.1.0.md --draft
+          gh release edit v1.1.0 --draft=false --latest
